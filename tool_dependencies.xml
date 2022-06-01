@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<tool_dependency>
+  <package name="getorganelledb" version="0.0.1">
+    <install version="1.0">
+      <actions>
+        <action type="download_by_url">https://github.com/kavonrtep/getorganelledb/archive/refs/tags/0.0.1.zip</action>
+        <action type="move_directory_files">
+          <source_directory>LabelDatabase</source_directory>
+          <destination_directory>$INSTALL_DIR/LabelDatabase</destination_directory>
+        </action>
+        <action type="move_directory_files">
+          <source_directory>SeedDatabase</source_directory>
+          <destination_directory>$INSTALL_DIR/SeedDatabase</destination_directory>
+        </action>
+        <action type="set_environment">
+          <environment_variable action="set_to" name="GETORGANELLEDB">$INSTALL_DIR</environment_variable>
+        </action>
+        <action type="set_environment">
+          <environment_variable action="set_to" name="GETORGANELE_VERSION">"0.0.1"</environment_variable>
+        </action>
+      </actions>
+    </install>
+    <readme>
+      copy orgenelledb from https://github.com/Kinggerm/GetOrganelleDB/
+    </readme>
+  </package>
+</tool_dependency>
